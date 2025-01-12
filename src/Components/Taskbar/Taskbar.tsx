@@ -16,7 +16,7 @@ export function Taskbar() {
     return (
     <footer 
         className="row-start-2 row-end-3 col-start-1 col-end-3 bg-taskbar-colour flex justify-between">
-        <div className="bg-start-button-norm hover:bg-start-button-hover bg-no-repeat w-[97px] h-[30px]"></div>
+        <button className="bg-start-button-norm hover:bg-start-button-hover bg-no-repeat w-[97px] h-[30px]"></button>
         <div className="flex items-center bg-trays-colour shadow-tray-inset">
             <div className='flex gap-0.5 items-center pr-2 pl-2'>
                 <TrayIcon icon= {greenShieldTray} altText="Green Shield Icon" />
