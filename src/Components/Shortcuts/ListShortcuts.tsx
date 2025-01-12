@@ -1,8 +1,8 @@
 import { Shortcut } from "./Shortcut"
 
 export function ListShortcuts() {
-    return (<>
+    return (<div>
     <Shortcut />
     <Shortcut />
-    </>)
+    </div>)
   }

@@ -6,7 +6,7 @@ import { ListAppWindow } from './Components/Windows/ListAppWindow'
 function App() {
   return (
     <section>
-      <div>
+      <div className="grid gap-2 grid-rows-[1fr_auto] grid_cols-[auto_1fr] h-screen w-full">
         <ListShortcuts />
         <Taskbar />
       </div>
