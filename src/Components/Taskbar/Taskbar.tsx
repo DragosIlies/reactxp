@@ -19,9 +19,9 @@ export function Taskbar() {
         <button className="bg-start-button-norm hover:bg-start-button-hover bg-no-repeat w-[97px] h-[30px]"></button>
         <div className="flex items-center bg-trays-colour shadow-tray-inset">
             <div className='flex gap-0.5 items-center pr-2 pl-2'>
-                <TrayIcon icon= {greenShieldTray} altText="Green Shield Icon" />
-                <TrayIcon icon= {defaultProgTray} altText="Default Prog Icon" />
-                <TrayIcon icon= {internetTray} altText="Internet Icon" />
+                <TrayIcon icon={greenShieldTray} altText="Green Shield Icon" />
+                <TrayIcon icon={defaultProgTray} altText="Default Prog Icon" />
+                <TrayIcon icon={internetTray} altText="Internet Icon" />
             </div>
             <div className='text-white font-light text-xs pr-2'>10:35 PM</div>
         </div>

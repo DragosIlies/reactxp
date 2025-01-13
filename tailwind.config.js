@@ -16,8 +16,13 @@ export default {
       boxShadow: {
         'tray-inset': 'inset 1px 0 1px #18bbff'
       },
+      textShadow: {
+        'shortcut': '0px 1px 1px black'
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
 
