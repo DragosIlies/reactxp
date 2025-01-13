@@ -13,11 +13,17 @@ export default {
         'start-button-hover': "url('assets/start-button/xp_btn_hover.png')",
         'start-button-click': "url('assets/start-button/xp_btn_click.png')",
       },
+      colors: {
+        'selected': 'rgb(11, 97, 255)'
+      },
       boxShadow: {
         'tray-inset': 'inset 1px 0 1px #18bbff'
       },
       textShadow: {
         'shortcut': '0px 1px 1px black'
+      },
+      dropShadow: {
+        'selected': 'blue 0px 0px'
       },
     },
   },
