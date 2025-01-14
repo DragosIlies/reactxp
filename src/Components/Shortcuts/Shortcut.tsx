@@ -53,7 +53,7 @@ export function Shortcut({
                 alt={altText}
             />
             <div
-                className={`text-white text-xs text-shadow-shortcut ${
+                className={`text-white text-xs text-shadow-shortcut select-none${
                     isSelected ? "bg-selected" : ""
                 }`}
             >
