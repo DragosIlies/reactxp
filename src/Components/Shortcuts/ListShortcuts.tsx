@@ -1,6 +1,8 @@
 import { Shortcut } from "./Shortcut";
 import { useState } from "react";
 import computerIcon from "../../assets/app_icons/mycomputer.png";
+import cmdIcon from "../../assets/app_icons/cmd.png";
+import internetIcon from "../../assets/app_icons/internet.png";
 import { UUID } from "crypto";
 
 type ShortcutData = {
@@ -14,8 +16,8 @@ type ShortcutData = {
 export function ListShortcuts() {
     const initialShortcuts: ShortcutData[] = [
         { id: crypto.randomUUID(), title: "My Computer", icon: computerIcon, altText: "Computer Icon", selected: false },
-        { id: crypto.randomUUID(), title: "Work", icon: computerIcon, altText: "Work Icon", selected: false },
-        { id: crypto.randomUUID(), title: "Documents", icon: computerIcon, altText: "Documents Icon", selected: false },
+        { id: crypto.randomUUID(), title: "Work", icon: cmdIcon, altText: "Work Icon", selected: false },
+        { id: crypto.randomUUID(), title: "Documents", icon: internetIcon, altText: "Documents Icon", selected: false },
     ];
     
     const [shortcuts, setShortcuts] = useState(initialShortcuts)
@@ -51,9 +53,10 @@ export function ListShortcuts() {
         <div className="flex flex-col gap-6 p-8 items-start">
             {shortcuts.map((shortcut) => (
               <Shortcut 
+                key={shortcut.id}
                 id = {shortcut.id}
                 title={shortcut.title}
-                icon={computerIcon}
+                icon={shortcut.icon}
                 altText={shortcut.altText}
                 isSelected={shortcut.selected}
                 onShortcutClick={handleShortcutClick}           
