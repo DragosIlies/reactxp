@@ -2,7 +2,7 @@ import './App.css'
 import { ListShortcuts } from './Components/Shortcuts/ListShortcuts'
 import { Taskbar } from './Components/Taskbar/Taskbar'
 //import greenShieldTray from './assets/tray_icons/green_shield.png'
-// import { ListAppWindow } from './Components/Windows/ListAppWindow'
+import { Desktop } from './Components/Windows/Desktop'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <ListShortcuts />
         <Taskbar />
       </div>
-      {/* <ListAppWindow /> */}
+      <Desktop />
     </section>
   )
 }
