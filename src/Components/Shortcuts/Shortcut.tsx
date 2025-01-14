@@ -54,7 +54,7 @@ export function Shortcut({
             />
             <div
                 className={`text-white text-xs text-shadow-shortcut select-none${
-                    isSelected ? "bg-selected" : ""
+                    isSelected ? " bg-selected" : ""
                 }`}
             >
                 {title}
